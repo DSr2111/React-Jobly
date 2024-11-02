@@ -7,4 +7,4 @@ function CompanyCard() {
     )
 }
 
-export default CompanyCard
+export default CompanyCard;
