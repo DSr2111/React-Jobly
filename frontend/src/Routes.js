@@ -9,9 +9,12 @@ import CompanyDetail from './CompanyDetail';
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" />
-      <Route path="/" />
-      <Route path="/" />
+      <Route path="/" element={<Home />} />
+      <Route path="/companies" element={<CompanyList />} />
+      <Route path="/companies/:handle" element={<CompanyDetail />} />
+      <Route path="/jobs" element={<Jobs />} />
+      <Route path="/signup" element={<SignupForm />} />
+      <Route path="/login" element={<LoginForm />} />
     </Routes>
   );
 }
