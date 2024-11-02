@@ -1,6 +1,6 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 
-function Routes() {
+function AppRoutes() {
   return (
     <Routes>
       <Route path="/" />
@@ -9,3 +9,5 @@ function Routes() {
     </Routes>
   );
 }
+
+export default AppRoutes;
