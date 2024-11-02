@@ -10,16 +10,17 @@ import {
   Button,
 } from 'reactstrap';
 
-function JobCard() {
+function JobCard({ job }) {
   return (
     <div>
-      <Card>
+      <Card className="m-2">
         <CardBody>
-          <CardTitle></CardTitle>
+          <CardTitle>{job.title}</CardTitle>
           <CardSubtitle></CardSubtitle>
           <ListGroup>
-            <ListGroupItem></ListGroupItem>
-            <ListGroupItem></ListGroupItem>
+            <ListGroupItem>{`Salary: ${job.salary || 0}`}</ListGroupItem>
+            <ListGroupItem>{`Equity: ${job.equity || 0}`}</ListGroupItem>
+            <Button className="mt-4"></Button>
           </ListGroup>
         </CardBody>
       </Card>
